@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Woof woof! </title>
+
+    <style>
+      .sameHeight {
+        height: 200px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class = "container">
+      <div class = "row" >
+        <br />
+        <div class ="col-md-12 col-sm-12 col-xs-12">
+
+        <div class="jumbotron">
+          <h1>Hello there!</h1>
+          <p>Please cast your votes by clicking on your favourite dog!</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-question-circle"></i> Learn more</a></p>
+
+          <div class="progress progress-striped active">
+            <div class="progress-bar" style="width: 45%"></div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class = "row" >
+
+        <div class ="col-md-6 col-sm-6 col-xs-6">
+          <div class = "well">
+            <p>
+              <center>
+              <img src= "https://assets.rbl.ms/474215/980x.jpg" alt="Husky" class="img-responsive img-circle sameHeight"/>
+                <h3>Husky</h3>
+                Count: <span id ="imgOneCount">0</span><br/>
+                <button onClick = "increaseCountImgOne()" class = "btn btn-warning"><i class="fa fa-hand-o-right"></i> PICK ME!</button>
+              </center>
+
+
+            </p>
+          </div>
+        </div>
+
+        <div class ="col-md-6 col-sm-6 col-xs-6">
+          <div class = "well">
+            <p>
+              <center>
+                <img src="https://68.media.tumblr.com/6aa63a57307cbfc32654b11fd2b0cb69/tumblr_mhepkvF9V21s46km3o1_500.gif" alt="lab" class="img-responsive img-circle sameHeight"/>
+                <h3>Shy</h3>
+                Count: <span id ="imgTwoCount">0</span><br />
+                <button onClick = "increaseCountImgTwo()" class = "btn btn-warning"><i class="fa fa-hand-o-right"></i>PICK ME!</button>
+              </center>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class = "row" >
+
+        <div class ="col-md-6 col-sm-6 col-xs-6">
+          <div class = "well">
+            <p>
+
+              <center>
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/61/88/ee/6188ee26f607930f5315dcad08afb609.gif" alt="qt" class="img-responsive img-circle sameHeight" />
+                <h3>Cute</h3>
+                Count: <span id ="imgThreeCount">0</span><br />
+                <button onClick = "increaseCountImgThree()" class = "btn btn-warning"><i class="fa fa-hand-o-right"></i>PICK ME!</button>
+              </center>
+            </p>
+          </div>
+        </div>
+
+        <div class ="col-md-6 col-sm-6 col-xs-6">
+          <div class = "well">
+            <p>
+              <center>
+                <img src="https://68.media.tumblr.com/ad82e57174d008e04d468fd141a1f637/tumblr_n3qwohzdvs1qbiuveo1_500.gif" alt="puggggg" class = "img-responsive img-circle sameHeight"/>
+                <h3>Pug</h3>
+                Count: <span id ="imgFourCount">0</span><br />
+                <button onClick = "increaseCountImgFour()" class = "btn btn-warning"><i class="fa fa-hand-o-right"></i>PICK ME!</button>
+              </center>
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      var img1 = 0
+      function increaseCountImgOne(){
+        img1+=1
+        $("#imgOneCount").html(img1)
+      }
+
+      var img2 = 0
+      function increaseCountImgTwo(){
+        img2+=1
+        $("#imgTwoCount").html(img2)
+      }
+
+      var img3 = 0
+      function increaseCountImgThree(){
+        img3+=1
+        $("#imgThreeCount").html(img3)
+      }
+
+      var img4 = 0
+      function increaseCountImgFour(){
+        img4+=1
+        $("#imgFourCount").html(img4)
+      }
+
+
+    </script>
+
+  </body>
+</html>

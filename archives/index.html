@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title> My First HTML Page </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>This is h1</h1>
+    <h2>This is h2</h2>
+    <h3>This is h3</h3>
+    <h4>This is h4</h4>
+    <h5>This is h5</h5>
+
+    <button>Click me</button>
+    <p>
+      Hello There!!!!!!!!!!!!!!!!!!
+    </p>
+
+    This is the body<br />
+    This is the next line <br>
+    <b>This should be bolded</b><br>
+    <s>This should be strikedthrough</s><br>
+    <i>This should be italicised</i>
+
+    <center><img src="http://i.imgur.com/K6bJNgE.gif" alt="PIKA"/></center>
+    <h1><center>Vote for your favourite Dog!</center></h1>
+
+    <p>
+
+      <table>
+        <tr>
+          <td>
+            <img src= "https://assets.rbl.ms/474215/980x.jpg" alt="haha" width =100%/>
+          </td>
+          <td>
+                Count: <span id ="imgOneCount">0</span><br />
+                <button onClick = "increaseCountImgOne()">PICK ME!</button>
+
+          </td>
+
+          <td>
+            <img src="https://68.media.tumblr.com/6aa63a57307cbfc32654b11fd2b0cb69/tumblr_mhepkvF9V21s46km3o1_500.gif" alt="haha" width =80%/>
+          </td>
+          <td>
+            Count: <span id ="imgTwoCount">0</span><br />
+            <button onClick = "increaseCountImgTwo()">PICK ME!</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/61/88/ee/6188ee26f607930f5315dcad08afb609.gif" alt="hoho" />
+          </td>
+          <td>
+              <span>
+                Count: <span id ="imgThreeCount">0</span><br />
+                <button onClick = "increaseCountImgThree()">PICK ME!</button>
+              </span>
+          </td>
+
+          <td>
+              <img src="https://68.media.tumblr.com/ad82e57174d008e04d468fd141a1f637/tumblr_n3qwohzdvs1qbiuveo1_500.gif" alt="puggggg" width =80%/>
+          </td>
+          <td>
+              <span>
+                Count: <span id ="imgFourCount">0</span><br />
+                <button onClick = "increaseCountImgFour()">PICK ME!</button>
+              </span>
+          </td>
+      </tr>
+
+      </table>
+
+      <script>
+        var img1 = 0
+        function increaseCountImgOne(){
+          img1+=1
+          $("#imgOneCount").html(img1)
+        }
+
+        var img2 = 0
+        function increaseCountImgTwo(){
+          img2+=1
+          $("#imgTwoCount").html(img2)
+        }
+
+        var img3 = 0
+        function increaseCountImgThree(){
+          img3+=1
+          $("#imgThreeCount").html(img3)
+        }
+
+        var img4 = 0
+        function increaseCountImgFour(){
+          img4+=1
+          $("#imgFourCount").html(img4)
+        }
+
+
+      </script>
+
+
+
+  </body>
+</html>
